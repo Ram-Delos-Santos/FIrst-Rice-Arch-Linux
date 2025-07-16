@@ -5,6 +5,8 @@
     border-radius: 9px;
     padding: 0px;
     background: transparent;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 window#waybar {
@@ -19,8 +21,10 @@ window#waybar {
 #power-profiles-daemon,
 #custom-power,
 #workspaces,
+#tray,
 #pulseaudio{
-    background: #2e4330;
+    background: rgba(46, 67, 48, 0.8);
+    opacity: 0.8;
     border-radius: 8px;
     padding: 4px 8px;
     
@@ -32,5 +36,12 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0.5px;
+}
+
+#workspaces button.active {
+    background: #93a68a;
+    color: #000;
+    font-weight: bold; 
+    transition: background 0.18s, color 0.18s;
 }
